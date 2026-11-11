@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Shaffof fondagi yashil velosiped ikonkasi.png">
+    <title>Pedal.uz - O‘zbekistondagi velosipedlar do‘koni</title>
+    <meta name="description" content="Tog‘, shosse, shahar, elektro va bolalar velosipedlari. Bepul yetkazib berish.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="blobs"><span></span><span></span><span></span></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#bosh" class="logo">Pedal<span>.uz</span></a>
+      <nav class="nav" id="nav">
+        <a href="#katalog">Katalog</a>
+        <a href="#afzallik">Afzalliklar</a>
+        <a href="#tanlash">Qanday tanlash</a>
+        <a href="#fikrlar">Fikrlar</a>
+        <a href="#savollar">Savollar</a>
+        <a href="#aloqa">Aloqa</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Savatcha">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="burger" id="burger" aria-label="Menyu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="bosh">
+    <img src="img/hero.jpg" alt="Tog‘da velosiped haydayotgan sportchi" class="hero-bg">
+    <div class="hero-shade"></div>
+    <div class="container hero-content">
+      <span class="tag">2026 yangi kolleksiya</span>
+      <h1>Yo‘lni <em>pedal</em> bilan zabt et</h1>
+      <p>Tog‘ cho‘qqilaridan shahar ko‘chalarigacha — har bir sayohat uchun mukammal velosiped. Toshkent bo‘ylab 24 soatda bepul yetkazib beramiz.</p>
+      <div class="hero-btns">
+        <a href="#katalog" class="btn btn-primary">Katalogni ko‘rish</a>
+        <a href="#tanlash" class="btn btn-ghost">Tanlashda yordam</a>
+      </div>
+      <div class="hero-stats">
+        <div><b class="count" data-to="12000" data-suf="+">0</b><span>mamnun mijoz</span></div>
+        <div><b class="count" data-to="150" data-suf="+">0</b><span>model</span></div>
+        <div><b class="count" data-to="2" data-suf=" yil">0</b><span>kafolat</span></div>
+      </div>
+    </div>
+    <a href="#katalog" class="scroll-down" aria-label="Pastga"><span></span></a>
+  </section>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Tog‘ velosipedlari</span><span>✦</span><span>Shosse</span><span>✦</span><span>Shahar</span><span>✦</span><span>Elektro</span><span>✦</span><span>BMX</span><span>✦</span><span>Bolalar uchun</span><span>✦</span>
+      <span>Tog‘ velosipedlari</span><span>✦</span><span>Shosse</span><span>✦</span><span>Shahar</span><span>✦</span><span>Elektro</span><span>✦</span><span>BMX</span><span>✦</span><span>Bolalar uchun</span><span>✦</span>
+    </div>
+  </div>
+
+  <section class="section" id="katalog">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Katalog</span>
+        <h2>Eng mashhur <em>modellar</em></h2>
+        <p>Har bir velosiped do‘konimiz ustalari tomonidan tekshirilib, sozlangan holda yetkaziladi.</p>
+      </div>
+      <div class="filters reveal">
+        <button class="filter active" data-cat="all">Hammasi</button>
+        <button class="filter" data-cat="tog">Tog‘</button>
+        <button class="filter" data-cat="shosse">Shosse</button>
+        <button class="filter" data-cat="shahar">Shahar</button>
+        <button class="filter" data-cat="elektro">Elektro</button>
+        <button class="filter" data-cat="bola">Bolalar va BMX</button>
+      </div>
+      <div class="products">
+        <article class="product reveal" data-cat="tog" data-id="1" data-name="Trail X9 Carbon" data-price="8900000" data-img="img/tog.jpg">
+          <span class="badge">Xit</span>
+          <div class="product-img"><img src="img/tog.jpg" alt="Trail X9 Carbon tog‘ velosipedi" loading="lazy"></div>
+          <div class="product-body">
+            <span class="product-cat">Tog‘ velosipedi</span>
+            <h3>Trail X9 Carbon</h3>
+            <ul class="specs"><li>29″ g‘ildirak</li><li>12 tezlik</li><li>11.2 kg</li></ul>
+            <div class="product-foot"><b class="price">8 900 000 so‘m</b><button class="add-btn">Savatga +</button></div>
+          </div>
+        </article>
+        <article class="product reveal" data-cat="shosse" data-id="2" data-name="Aero Speed R7" data-price="12500000" data-img="img/shosse.jpg">
+          <span class="badge badge-orange">Yangi</span>
+          <div class="product-img"><img src="img/shosse.jpg" alt="Aero Speed R7 shosse velosipedi" loading="lazy"></div>
+          <div class="product-body">
+            <span class="product-cat">Shosse velosipedi</span>
+            <h3>Aero Speed R7</h3>
+            <ul class="specs"><li>Karbon rama</li><li>22 tezlik</li><li>7.8 kg</li></ul>
+            <div class="product-foot"><b class="price">12 500 000 so‘m</b><button class="add-btn">Savatga +</button></div>
+          </div>
+        </article>
+        <article class="product reveal" data-cat="shahar" data-id="3" data-name="City Breeze" data-price="3400000" data-img="img/shahar.jpg">
+          <div class="product-img"><img src="img/shahar.jpg" alt="City Breeze shahar velosipedi" loading="lazy"></div>
+          <div class="product-body">
+            <span class="product-cat">Shahar velosipedi</span>
+            <h3>City Breeze</h3>
+            <ul class="specs"><li>28″ g‘ildirak</li><li>Savatcha</li><li>7 tezlik</li></ul>
+            <div class="product-foot"><b class="price">3 400 000 so‘m</b><button class="add-btn">Savatga +</button></div>
+          </div>
+        </article>
+        <article class="product reveal" data-cat="elektro" data-id="4" data-name="Volt E-Ride 500" data-price="15900000" data-img="img/elektro.jpg">
+          <span class="badge">−15%</span>
+          <div class="product-img"><img src="img/elektro.jpg" alt="Volt E-Ride 500 elektro velosiped" loading="lazy"></div>
+          <div class="product-body">
+            <span class="product-cat">Elektro velosiped</span>
+            <h3>Volt E-Ride 500</h3>
+            <ul class="specs"><li>500 Vt motor</li><li>90 km zaryad</li><li>25 km/s</li></ul>
+            <div class="product-foot"><b class="price">15 900 000 so‘m</b><button class="add-btn">Savatga +</button></div>
+          </div>
+        </article>
+        <article class="product reveal" data-cat="bola" data-id="5" data-name="Street BMX Pro" data-price="2700000" data-img="img/bmx.jpg">
+          <div class="product-img"><img src="img/bmx.jpg" alt="Street BMX Pro velosipedi" loading="lazy"></div>
+          <div class="product-body">
+            <span class="product-cat">BMX</span>
+            <h3>Street BMX Pro</h3>
+            <ul class="specs"><li>20″ g‘ildirak</li><li>Po‘lat rama</li><li>Pegi bor</li></ul>
+            <div class="product-foot"><b class="price">2 700 000 so‘m</b><button class="add-btn">Savatga +</button></div>
+          </div>
+        </article>
+        <article class="product reveal" data-cat="bola" data-id="6" data-name="Kichkintoy 14" data-price="1350000" data-img="img/bolalar.jpg">
+          <span class="badge badge-orange">Bolalar</span>
+          <div class="product-img"><img src="img/bolalar.jpg" alt="Kichkintoy 14 bolalar velosipedi" loading="lazy"></div>
+          <div class="product-body">
+            <span class="product-cat">Bolalar velosipedi</span>
+            <h3>Kichkintoy 14</h3>
+            <ul class="specs"><li>3–6 yosh</li><li>Yordamchi g‘ildirak</li><li>Yengil</li></ul>
+            <div class="product-foot"><b class="price">1 350 000 so‘m</b><button class="add-btn">Savatga +</button></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="afzallik">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Nega biz?</span>
+        <h2>Pedal.uz <em>afzalliklari</em></h2>
+      </div>
+      <div class="features">
+        <div class="feature reveal"><div class="feature-icon">🚚</div><h3>Bepul yetkazish</h3><p>Toshkent bo‘ylab 24 soatda, viloyatlarga 3 kun ichida eshigingizgacha.</p></div>
+        <div class="feature reveal"><div class="feature-icon">🛡️</div><h3>2 yil kafolat</h3><p>Rama va barcha ehtiyot qismlarga rasmiy kafolat beramiz.</p></div>
+        <div class="feature reveal"><div class="feature-icon">🔧</div><h3>Bepul servis</h3><p>Birinchi yil davomida texnik ko‘rik va sozlash mutlaqo bepul.</p></div>
+        <div class="feature reveal"><div class="feature-icon">💳</div><h3>Muddatli to‘lov</h3><p>12 oygacha foizsiz bo‘lib to‘lash imkoniyati mavjud.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo">
+    <div class="container promo-inner reveal reveal-zoom">
+      <div class="promo-text reveal reveal-left">
+        <span class="tag">Faqat shu oy</span>
+        <h2>Elektro velosipedlarga <em>−15%</em> chegirma</h2>
+        <p>Tirbandlikni unuting. Bir zaryad bilan 90 km yo‘l bosing va har kuni ishga terlamasdan yetib boring.</p>
+        <a href="#katalog" class="btn btn-primary">Hoziroq tanlash</a>
+      </div>
+      <img src="img/elektro.jpg" alt="Elektro velosiped" loading="lazy" class="reveal reveal-right">
+    </div>
+  </section>
+
+  <section class="section" id="tanlash">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Qo‘llanma</span>
+        <h2>Velosipedni qanday <em>tanlash</em> kerak?</h2>
+        <p>To‘rt oddiy qadam — va siz o‘zingizga mos velosipedni topasiz.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><span class="step-num">01</span><h3>Maqsadni aniqlang</h3><p>Shahar bo‘ylab sayr, tog‘ yo‘llari yoki tezlik — har biriga alohida turdagi velosiped kerak.</p></div>
+        <div class="step reveal"><span class="step-num">02</span><h3>Rama o‘lchamini tanlang</h3><p>Bo‘yingiz 160–170 sm bo‘lsa S, 170–180 sm bo‘lsa M, 180 sm dan baland bo‘lsa L o‘lcham mos keladi.</p></div>
+        <div class="step reveal"><span class="step-num">03</span><h3>Tormozga e’tibor bering</h3><p>Diskli gidravlik tormozlar yomg‘irda ham ishonchli ishlaydi va xavfsizroq.</p></div>
+        <div class="step reveal"><span class="step-num">04</span><h3>Sinab ko‘ring</h3><p>Do‘konimizga keling va istalgan modelni bepul test-drayv qiling.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container benefits">
+      <div class="benefits-text reveal reveal-left">
+        <span class="tag">Sog‘lom hayot</span>
+        <h2>Velosipedning <em>foydalari</em></h2>
+        <p>Har kuni atigi 30 daqiqa velosiped haydash yuragingizni mustahkamlaydi, kayfiyatni ko‘taradi va shaharni toza saqlashga yordam beradi.</p>
+      </div>
+      <div class="benefit-grid">
+        <div class="benefit reveal"><b class="count" data-to="400">0</b><span>kkal bir soatda yoqiladi</span></div>
+        <div class="benefit reveal"><b class="count" data-pre="−" data-to="50" data-suf="%">0</b><span>yurak kasalliklari xavfi</span></div>
+        <div class="benefit reveal"><b class="count" data-to="0" data-suf=" g">0</b><span>CO₂ chiqindisi</span></div>
+        <div class="benefit reveal"><b class="count" data-to="3" data-suf="×">0</b><span>piyodadan tezroq</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="fikrlar">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Mijozlar</span>
+        <h2>Ular bizni <em>tanladi</em></h2>
+      </div>
+      <div class="reviews">
+        <div class="review reveal"><div class="stars">★★★★★</div><p>“Trail X9 bilan Chimgan tog‘larida sayohat qildim. Velosiped juda yengil va ishonchli. Yetkazib berish ham tez bo‘ldi!”</p><div class="author"><span>A</span><div><b>Aziz Karimov</b><small>Toshkent</small></div></div></div>
+        <div class="review reveal"><div class="stars">★★★★★</div><p>“Elektro velosiped olganimdan beri ishga taksida emas, velosipedda boraman. Pul ham, vaqt ham tejalyapti.”</p><div class="author"><span>M</span><div><b>Malika Yusupova</b><small>Samarqand</small></div></div></div>
+        <div class="review reveal"><div class="stars">★★★★★</div><p>“O‘g‘limga Kichkintoy 14 oldik — juda xursand. Sotuvchilar o‘lchamni to‘g‘ri tanlashga yordam berishdi.”</p><div class="author"><span>S</span><div><b>Sardor Rahimov</b><small>Buxoro</small></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="savollar">
+    <div class="container faq-wrap">
+      <div class="section-head reveal">
+        <span class="tag">Savol-javob</span>
+        <h2>Ko‘p beriladigan <em>savollar</em></h2>
+      </div>
+      <div class="faq reveal reveal-zoom">
+        <details><summary>Yetkazib berish qancha vaqt oladi?</summary><p>Toshkent shahri bo‘ylab 24 soat ichida, viloyatlarga 2–3 ish kunida bepul yetkazib beramiz.</p></details>
+        <details><summary>Muddatli to‘lov qanday ishlaydi?</summary><p>Pasport bilan 3, 6 yoki 12 oyga foizsiz bo‘lib to‘lashingiz mumkin. Rasmiylashtirish 15 daqiqa vaqt oladi.</p></details>
+        <details><summary>Velosipedni qaytarsa bo‘ladimi?</summary><p>Ha, xarid qilinganidan keyin 14 kun ichida velosiped ishlatilmagan bo‘lsa, pulingizni to‘liq qaytaramiz.</p></details>
+        <details><summary>Kafolat nimalarni o‘z ichiga oladi?</summary><p>Rama, vilka, tormoz va uzatmalar tizimidagi zavod nuqsonlari 2 yil davomida bepul tuzatiladi.</p></details>
+        <details><summary>Test-drayv qilsam bo‘ladimi?</summary><p>Albatta! Do‘konimizga keling — barcha modellarni maxsus maydonchada bepul sinab ko‘rishingiz mumkin.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="aloqa">
+    <div class="container contact">
+      <div class="contact-info reveal reveal-left">
+        <span class="tag">Aloqa</span>
+        <h2>Savolingiz <em>bormi?</em></h2>
+        <p>Raqamingizni qoldiring — mutaxassisimiz 10 daqiqa ichida qo‘ng‘iroq qiladi.</p>
+        <ul>
+          <li><b>Manzil:</b> Namangan, Uychi ko‘chasi, 18</li>
+          <li><b>Telefon:</b> +998 50 030 54 50</li>
+          <li><b>Ish vaqti:</b> Har kuni 09:00 – 21:00</li>
+        </ul>
+      </div>
+      <form class="form reveal reveal-right" id="contactForm">
+        <label>Ismingiz<input type="text" placeholder="Masalan, Jasur" required></label>
+        <label>Telefon raqam<input type="tel" placeholder="+998 __ ___ __ __" required></label>
+        <label>Xabar<textarea rows="4" placeholder="Qaysi velosiped sizni qiziqtiradi?"></textarea></label>
+        <button type="submit" class="btn btn-primary">Yuborish</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#bosh" class="logo">Pedal<span>.uz</span></a>
+      <p>© 2026 MamadjonovHikmatillo.uz — Barcha huquqlar himoyalangan.</p>
+      <div class="socials"><a href="#">Telegram</a><a href="#">Instagram</a><a href="#">YouTube</a></div>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart" id="cart">
+    <div class="cart-head">
+      <h3>Savatcha</h3>
+      <button class="cart-close" id="cartClose" aria-label="Yopish">✕</button>
+    </div>
+    <p class="cart-empty" id="cartEmpty">Savatchangiz hozircha bo‘sh 🚲</p>
+    <ul class="cart-items" id="cartItems"></ul>
+    <div class="cart-foot">
+      <div class="cart-total"><span>Jami:</span><b id="cartTotal">0 so‘m</b></div>
+      <button class="btn btn-primary btn-block" id="checkout">Buyurtma berish</button>
+      <button class="btn-link" id="clearCart">Savatchani tozalash</button>
+    </div>
+  </aside>
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
